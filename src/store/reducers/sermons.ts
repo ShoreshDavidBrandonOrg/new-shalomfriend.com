@@ -55,6 +55,7 @@ export const searchSermons = (allSermons: any, query: string) => {
     if (node.title.toLowerCase().indexOf(query.toLowerCase()) > -1) {
       results.push(node);
     }
+    return [];
   });
 
   return results;

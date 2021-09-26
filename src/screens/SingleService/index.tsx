@@ -20,6 +20,7 @@ export const SingleService = () => {
 
   React.useEffect(() => {
     fetch();
+    // eslint-disable-next-line
   }, [slug]);
 
   const fetch = async () => {

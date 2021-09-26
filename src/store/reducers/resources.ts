@@ -60,6 +60,7 @@ export const searchResources = (allResources: any, query: string) => {
     if (node?.title?.toLowerCase().indexOf(query?.toLowerCase()) > -1) {
       results.push(node);
     }
+    return [];
   });
 
   return results;

@@ -27,6 +27,7 @@ export const ServiceList = () => {
 
   React.useEffect(() => {
     fetch();
+    // eslint-disable-next-line
   }, []);
 
   React.useEffect(() => {

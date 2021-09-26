@@ -16,6 +16,7 @@ export const Jewish = () => {
 
   React.useEffect(() => {
     fetch();
+    // eslint-disable-next-line
   }, []);
 
   const fetch = async () => {

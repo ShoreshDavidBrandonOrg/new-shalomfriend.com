@@ -30,6 +30,7 @@ const RightSide = ({ data, selectedPart }: any) => {
         <AspectRatio ratio={16 / 9} maxW="100%" w="100%" m="0" p="0">
           <iframe
             src={selectedPart?.video}
+            title={selectedPart?.title}
             allowFullScreen
             style={{ width: '100%', height: '100%', margin: 0 }}
           />
@@ -41,7 +42,12 @@ const RightSide = ({ data, selectedPart }: any) => {
   return (
     <Stack>
       <AspectRatio ratio={16 / 9} w="100%">
-        <iframe src={data?.video} allowFullScreen style={{ width: '100%' }} />
+        <iframe
+          src={data?.video}
+          allowFullScreen
+          title={selectedPart?.title}
+          style={{ width: '100%' }}
+        />
       </AspectRatio>
       {/* <Spacer mb="8" /> */}
     </Stack>
