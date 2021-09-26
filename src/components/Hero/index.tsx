@@ -37,7 +37,7 @@ export const Hero = ({ ...rest }: any) => {
           lineHeight={1.5}
           textAlign={['center', 'center', 'left', 'left']}
         >
-          Join us in continuing Rabbi Don Goldstein's legacy of bringing the
+          Join us in continuing Rabbi Don Goldstein's mission of bringing the
           pre-believers to Yeshua
         </Heading>
       </Stack>
